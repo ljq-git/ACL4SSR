@@ -13,7 +13,7 @@ mixed-port: 7890
 external-controller: 127.0.0.1:9090
 allow-lan: false
 mode: rule
-log-level: warning
+log-level: error
 
 proxies:
 
