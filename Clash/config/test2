@@ -43,90 +43,35 @@ ruleset=🆎 AdBlock,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Cl
 ruleset=🛡️ 隐私防护,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
 ruleset=🍎 苹果服务News,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AppleNews.list
 ruleset=🍎 苹果服务TV,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AppleTV.list
-
-
 ruleset=🎯 全球直连,[]GEOIP,CN
 ruleset=🐟 漏网之鱼,[]FINAL
 
-
-custom_proxy_group=♻️ 自动选择`url-test`.*`http://www.gstatic.com/generate_204`300,,10
-custom_proxy_group=📢 Google`select`[]♻️ 自动选择`.*
-custom_proxy_group=Ⓜ️ 微软服务`select`[]♻️ 自动选择`[]DIRECT`.*
-custom_proxy_group=📚 微软云盘`select`[]♻️ 自动选择`[]DIRECT`.*
-custom_proxy_group=📱 电报信息`select`[]♻️ 自动选择`.*
-custom_proxy_group=📹 油管视频`select`[]♻️ 自动选择`.*
-custom_proxy_group=🚢 国外连接`select`[]♻️ 自动选择`.*
-custom_proxy_group=🛒 Amazon`select`[]♻️ 自动选择`.*
-custom_proxy_group=💻 Github`select`[]♻️ 自动选择`[]DIRECT`.*
-custom_proxy_group=🐟 漏网之鱼`select`[]♻️ 自动选择`[]DIRECT`.*
-custom_proxy_group=🍎 苹果服务`select`[]DIRECT`[]♻️ 自动选择`.*
-custom_proxy_group=🍎 苹果服务News`select`[]DIRECT`[]♻️ 自动选择`.*
-custom_proxy_group=🍎 苹果服务TV``select`[]DIRECT`[]♻️ 自动选择`.*
-custom_proxy_group=🎯 全球直连`select`[]DIRECT`[]♻️ 自动选择`.*
-custom_proxy_group=✏️ Adobe`select`[]REJECT`[]DIRECT`[]♻️ 自动选择`.*
-custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT`[]♻️ 自动选择`.*
-custom_proxy_group=🍃 应用净化`select`[]REJECT`[]DIRECT`[]♻️ 自动选择`.*
-custom_proxy_group=🆎 AdBlock`select`[]REJECT`[]DIRECT`[]♻️ 自动选择`.*
-custom_proxy_group=🛡️ 隐私防护`select`[]REJECT`[]DIRECT`[]♻️ 自动选择`.*
-
-
-
-;custom_proxy_group=🌍 国外媒体`select`[]♻️ 自动选择`.*
-;custom_proxy_group=🌏 国内媒体`select`[]DIRECT`.*
-;custom_proxy_group=📺 哔哩哔哩`select`[]DIRECT`.*
-;custom_proxy_group=🎶 网易音乐`select`[]DIRECT`.*
+custom_proxy_group=☕️ 服务信息`select`!!GROUPID=1!!(流量|时间)
+custom_proxy_group=♻️ 自动选择`url-test`!!GROUPID=0`http://www.gstatic.com/generate_204`300,,10
+custom_proxy_group=📢 Google`select`[]♻️ 自动选择`!!GROUPID=0
+custom_proxy_group=📱 电报信息`select`[]♻️ 自动选择`!!GROUPID=0
+custom_proxy_group=📹 油管视频`select`[]♻️ 自动选择`!!GROUPID=0
+custom_proxy_group=🚢 国外连接`select`[]♻️ 自动选择`!!GROUPID=0
+custom_proxy_group=🛒 Amazon`select`[]♻️ 自动选择`!!GROUPID=0
+custom_proxy_group=Ⓜ️ 微软服务`select`[]♻️ 自动选择`[]DIRECT`!!GROUPID=0
+custom_proxy_group=📚 微软云盘`select`[]♻️ 自动选择`[]DIRECT`!!GROUPID=0
+custom_proxy_group=💻 Github`select`[]♻️ 自动选择`[]DIRECT`!!GROUPID=0
+custom_proxy_group=🐟 漏网之鱼`select`[]♻️ 自动选择`[]DIRECT`!!GROUPID=0
+custom_proxy_group=🍎 苹果服务`select`[]DIRECT`[]♻️ 自动选择`!!GROUPID=0
+custom_proxy_group=🍎 苹果服务News`select`[]DIRECT`[]♻️ 自动选择`!!GROUPID=0
+custom_proxy_group=🍎 苹果服务TV``select`[]DIRECT`[]♻️ 自动选择`!!GROUPID=0
+custom_proxy_group=🎯 全球直连`select`[]DIRECT`[]♻️ 自动选择`!!GROUPID=0
+custom_proxy_group=✏️ Adobe`select`[]REJECT`[]DIRECT`[]♻️ 自动选择`!!GROUPID=0
+custom_proxy_group=🛑 全球拦截`select`[]REJECT`[]DIRECT`[]♻️ 自动选择`!!GROUPID=0
+custom_proxy_group=🍃 应用净化`select`[]REJECT`[]DIRECT`[]♻️ 自动选择`!!GROUPID=0
+custom_proxy_group=🆎 AdBlock`select`[]REJECT`[]DIRECT`[]♻️ 自动选择`!!GROUPID=0
+custom_proxy_group=🛡️ 隐私防护`select`[]REJECT`[]DIRECT`[]♻️ 自动选择`!!GROUPID=0
 
 
-;ruleset=🎶 网易音乐,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list
-;ruleset=📺 哔哩哔哩,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
-;ruleset=📺 哔哩哔哩,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
-
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Tencent.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TencentLolm.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Alibaba.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/ByteDance.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/CCTV.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/DiDi.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Douyu.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/HuaWei.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Iflytek.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/JD.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Kingsoft.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/MI.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/MOO.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEase.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/PDD.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/PublicDirectCDN.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sina.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SohuSogo.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sina.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TikTok.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Vip.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Ximalaya.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Xunlei.list
-;ruleset=🎯 全球直连,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YYeTs.list
-;ruleset=🍎 苹果服务News,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AppleNews.list
-;ruleset=🍎 苹果服务TV,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AppleTV.list
-
-;ruleset=🌏 国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/TencentVideo.list
-;ruleset=🌏 国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Iqiyi.list
-;ruleset=🌏 国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/IqiyiHMT.list
-;ruleset=🌏 国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
-;ruleset=🌏 国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Youku.list
-;ruleset=🌏 国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/HWTV.list
-;ruleset=🌏 国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Kuaishou.list
-;ruleset=🌏 国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/LeTV.list
-;ruleset=🌏 国内媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/PPTVPPLive.list
-;ruleset=🌍 国外媒体,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-
-;ruleset=🚢 国外连接,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Developer.list
-;ruleset=🚢 国外连接,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Dubox.list
-;ruleset=🚢 国外连接,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Facebook.list
-;ruleset=🚢 国外连接,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Instagram.list
-;ruleset=🚢 国外连接,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/PrivateTracker.list
-;ruleset=🚢 国外连接,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/ProxyGFWlist.list
-;ruleset=🚢 国外连接,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
-;ruleset=🚢 国外连接,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitch.list
-;ruleset=🚢 国外连接,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Twitter.list
+enable_rule_generator=true
+overwrite_original_rules=true
+append_sub_userinfo= true
+config_update_interval = 60
+config_update_strict=true
+append_proxy_type=true
+exclude_remarks=(Advanced|Basic|Renew)
