@@ -1,4 +1,5 @@
 
 # 自定义****************
 DOMAIN-SUFFIX,in.appcenter.ms
+DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com
 
