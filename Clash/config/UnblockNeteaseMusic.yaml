@@ -1,0 +1,14 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: false
+mode: rule
+log-level: silent
+external-controller: '0.0.0.0:9090'
+secret: ''
+proxies:
+  -
+    name: 'UnblockNeteaseMusic'
+    type: http
+    server: 172.18.5.133
+    port: 8080
